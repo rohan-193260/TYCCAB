@@ -10,4 +10,12 @@ jobs:
      - name: show current working directory
        run: pwd
 
-     
+     - run: ls -la
+
+     - name: print today's date 
+       run: date
+
+     - name: create and display a text file
+       run:
+         echo "this is a demo file" > demo.txt
+         cat demo.txt
